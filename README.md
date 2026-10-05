@@ -35,4 +35,6 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 - **Phone controls desktop:** install the plugin, set up Lidarr in both apps and use the same music server
   address in both. The desktop app then appears in the phone's **Devices** screen.
 
-  TODO: add ios APP
+  ## TODO:
+  add ios APP
+  move connect to navidrome as plugin
