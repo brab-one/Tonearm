@@ -24,11 +24,12 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
   username and your password. If the server sits behind an mTLS proxy, import the same `.p12` client
   certificate in each app.
 - **Lidarr** (optional): in each app's settings, enter Lidarr's address and its API key (from Lidarr →
-  Settings → General). This lets you request artists and albums. YouTube Music songs you play are
-  requested too, so the lossless version gets downloaded. Lidarr must save its downloads into the music
+  Settings → General). This lets you request artists and albums, and liking a YouTube Music song requests
+  its album so the lossless version gets downloaded. Lidarr must save its downloads into the music
   server's library folder.
 - **Brainarr** (optional): install [Brainarr](https://github.com/RicherTunes/Brainarr) in Lidarr and add it
-  as an import list. Its picks show up under Discover on the phone and Brainarr on the desktop.
+  as an import list. Its picks show up under Discover on the phone and Brainarr on the desktop, where you
+  can also turn on **weekly picks** (a new playlist every week that downloads by itself).
 - **Maloja** (optional, phone only): enter its address and API key to get recommendations from your
   listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
 - **Phone controls desktop:** install the plugin, set up Lidarr in both apps and use the same music server
