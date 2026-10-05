@@ -11,7 +11,7 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 
 ## Install
 
-1. **Phone:** install the `.apk` from the [phone app releases](https://github.com/brab-one/Tonearm-PhoneApp/releases/latest).
+1. **Phone:** install the `.apk` from the [phone app releases](https://github.com/brab-one/Tonearm-PhoneApp/releases/latest). 
 2. **Desktop:** use the [desktop releases](https://github.com/brab-one/Tonearm-Desktop/releases/latest).
    On Windows, run the `.msi`. On Linux, install the `.deb` or unpack the `.tar.gz`. Linux also needs mpv
    (`sudo apt install libmpv2` or `sudo pacman -S mpv`).
@@ -30,6 +30,8 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 - **Brainarr** (optional): install [Brainarr](https://github.com/RicherTunes/Brainarr) in Lidarr and add it
   as an import list. Its picks show up under Discover on the phone and Brainarr on the desktop.
 - **Maloja** (optional, phone only): enter its address and API key to get recommendations from your
-  listening history.
+  listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
 - **Phone controls desktop:** install the plugin, set up Lidarr in both apps and use the same music server
   address in both. The desktop app then appears in the phone's **Devices** screen.
+
+  TODO: add ios APP
