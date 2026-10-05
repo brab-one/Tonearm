@@ -7,7 +7,7 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 | --- | --- |
 | [Tonearm-PhoneApp](https://github.com/brab-one/Tonearm-PhoneApp) | the Android app |
 | [Tonearm-Desktop](https://github.com/brab-one/Tonearm-Desktop) | the Linux and Windows app |
-| [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the Lidarr plugin that lets the phone control the desktop app |
+| [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the Lidarr plugin that lets the phone control the desktop app and shares likes between them |
 
 ## Install
 
