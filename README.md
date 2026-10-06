@@ -7,7 +7,8 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 | --- | --- |
 | [Tonearm-PhoneApp](https://github.com/brab-one/Tonearm-PhoneApp) | the Android app |
 | [Tonearm-Desktop](https://github.com/brab-one/Tonearm-Desktop) | the Linux and Windows app |
-| [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the Lidarr plugin that lets the phone control the desktop app and shares likes between them |
+| [Tonearm-Server](https://github.com/brab-one/Tonearm-Server) | lets the phone control the desktop app and shares likes between them, for everyone on your Navidrome |
+| [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the same as a Lidarr plugin, if you don't run the server |
 
 ## Install
 
@@ -15,8 +16,9 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 2. **Desktop:** use the [desktop releases](https://github.com/brab-one/Tonearm-Desktop/releases/latest).
    On Windows, run the `.msi`. On Linux, install the `.deb` or unpack the `.tar.gz`. Linux also needs mpv
    (`sudo apt install libmpv2` or `sudo pacman -S mpv`).
-3. **Plugin** (optional): in Lidarr, go to **System → Plugins** and enter
-   `https://github.com/brab-one/Tonearm-Connect`. Install it, then restart Lidarr.
+3. **Server** (optional): run the [Tonearm server](https://github.com/brab-one/Tonearm-Server) in Docker
+   and send your proxy's `/connect-tonearm` to it (step by step in its README). Or instead the **plugin**: in
+   Lidarr, go to **System → Plugins** and enter `https://github.com/brab-one/Tonearm-Connect`, then restart Lidarr.
 
 ## Setup
 
@@ -32,8 +34,8 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
   can also turn on **weekly picks** (a new playlist every week that downloads by itself).
 - **Maloja** (optional, phone only): enter its address and API key to get recommendations from your
   listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
-- **Phone controls desktop:** install the plugin, set up Lidarr in both apps and use the same music server
-  address in both. The desktop app then appears in the phone's **Devices** screen.
+- **Phone controls desktop:** run the server (or install the plugin and set up Lidarr in both apps) and use
+  the same music server address in both. The desktop app then appears in the phone's **Devices** screen.
 
   ## TODO:
   add ios APP
