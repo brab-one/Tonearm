@@ -32,6 +32,7 @@ can request music you don't have yet through Lidarr and get AI suggestions from 
 - **Maloja** (optional, phone only): give its address and API key to the Tonearm server, or enter them in
   the app, to get recommendations from your
   listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
+- **Discovery** works by itself once the Tonearm server runs: artists like yours, from Deezer.
 - **AI picks** (optional): give the Tonearm server your Ollama's address (`OLLAMA_URL`). They show up under
   Discover on the phone and AI picks on the desktop, where you can also turn on **weekly picks** (a new
   playlist every week that downloads by itself).
