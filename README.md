@@ -7,7 +7,7 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 | --- | --- |
 | [Tonearm-PhoneApp](https://github.com/brab-one/Tonearm-PhoneApp) | the Android app |
 | [Tonearm-Desktop](https://github.com/brab-one/Tonearm-Desktop) | the Linux and Windows app |
-| [Tonearm-Server](https://github.com/brab-one/Tonearm-Server) | lets the phone control the desktop app and shares likes between them, for everyone on your Navidrome |
+| [Tonearm-Server](https://github.com/brab-one/Tonearm-Server) | for everyone on your Navidrome: the phone controls the desktop app, Lidarr and Maloja without handing out their keys, AI picks from Ollama |
 | [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the same as a Lidarr plugin, if you don't run the server |
 
 ## Install
@@ -25,15 +25,17 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
 - **Music server** (required): Navidrome or another Subsonic server. In each app, enter its address, your
   username and your password. If the server sits behind an mTLS proxy, import the same `.p12` client
   certificate in each app.
-- **Lidarr** (optional): in each app's settings, enter Lidarr's address and its API key (from Lidarr →
-  Settings → General). This lets you request artists and albums, and liking a YouTube Music song requests
+- **Lidarr** (optional): give its address and API key (from Lidarr → Settings → General) to the Tonearm
+  server once, or enter them in each app's settings. This lets you request artists and albums, and liking a YouTube Music song requests
   its album so the lossless version gets downloaded. Lidarr must save its downloads into the music
   server's library folder.
 - **Brainarr** (optional): install [Brainarr](https://github.com/RicherTunes/Brainarr) in Lidarr and add it
   as an import list. Its picks show up under Discover on the phone and Brainarr on the desktop, where you
   can also turn on **weekly picks** (a new playlist every week that downloads by itself).
-- **Maloja** (optional, phone only): enter its address and API key to get recommendations from your
+- **Maloja** (optional, phone only): give its address and API key to the Tonearm server, or enter them in
+  the app, to get recommendations from your
   listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
+- **AI picks** (optional): give the Tonearm server your Ollama's address (`OLLAMA_URL`).
 - **Phone controls desktop:** run the server (or install the plugin and set up Lidarr in both apps) and use
   the same music server address in both. The desktop app then appears in the phone's **Devices** screen.
 
