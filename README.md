@@ -1,7 +1,7 @@
 # Tonearm
 
 A lossless player for your own music server, on Android (with Android Auto) and on Linux and Windows. It
-can request music you don't have yet through Lidarr and get suggestions from Brainarr.
+can request music you don't have yet through Lidarr and get AI suggestions from your own Ollama.
 
 | Repository | What it is |
 | --- | --- |
@@ -29,13 +29,12 @@ can request music you don't have yet through Lidarr and get suggestions from Bra
   server once, or enter them in each app's settings. This lets you request artists and albums, and liking a YouTube Music song requests
   its album so the lossless version gets downloaded. Lidarr must save its downloads into the music
   server's library folder.
-- **Brainarr** (optional): install [Brainarr](https://github.com/RicherTunes/Brainarr) in Lidarr and add it
-  as an import list. Its picks show up under Discover on the phone and Brainarr on the desktop, where you
-  can also turn on **weekly picks** (a new playlist every week that downloads by itself).
 - **Maloja** (optional, phone only): give its address and API key to the Tonearm server, or enter them in
   the app, to get recommendations from your
   listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
-- **AI picks** (optional): give the Tonearm server your Ollama's address (`OLLAMA_URL`).
+- **AI picks** (optional): give the Tonearm server your Ollama's address (`OLLAMA_URL`). They show up under
+  Discover on the phone and AI picks on the desktop, where you can also turn on **weekly picks** (a new
+  playlist every week that downloads by itself).
 - **Phone controls desktop:** run the server (or install the plugin and set up Lidarr in both apps) and use
   the same music server address in both. The desktop app then appears in the phone's **Devices** screen.
 
