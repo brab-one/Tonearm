@@ -1,13 +1,13 @@
 # Tonearm
 
 A lossless player for your own music server, on Android (with Android Auto) and on Linux and Windows. It
-can request music you don't have yet through Lidarr and get AI suggestions from your own Ollama.
+can request music you don't have yet through Lidarr and get suggestions from what you play, by an AI of your choice.
 
 | Repository | What it is |
 | --- | --- |
 | [Tonearm-PhoneApp](https://github.com/brab-one/Tonearm-PhoneApp) | the Android app |
 | [Tonearm-Desktop](https://github.com/brab-one/Tonearm-Desktop) | the Linux and Windows app |
-| [Tonearm-Server](https://github.com/brab-one/Tonearm-Server) | for everyone on your Navidrome: the phone controls the desktop app, Lidarr and Maloja without handing out their keys, AI picks from Ollama |
+| [Tonearm-Server](https://github.com/brab-one/Tonearm-Server) | for everyone on your Navidrome: the phone controls the desktop app, Lidarr without handing out its key, your listening history, AI picks |
 | [Tonearm-Connect](https://github.com/brab-one/Tonearm-Connect) | the old Lidarr plugin version, no longer used by the apps |
 
 ## Install
@@ -28,12 +28,14 @@ can request music you don't have yet through Lidarr and get AI suggestions from 
   server; the apps get it from there. This lets you request artists and albums, and liking a YouTube Music song requests
   its album so the lossless version gets downloaded. Lidarr must save its downloads into the music
   server's library folder.
-- **Maloja** (optional, phone only): give its address and API key to the Tonearm server, or enter them in
-  the app, to get recommendations from your
-  listening history. For Maloja you need a last.fm account (search could also work through tubifarry youtube music search.)
+- **Listening history** works by itself once the Tonearm server runs: both apps send it what they play
+  (YouTube Music too), and the recommendations follow it. Maloja isn't needed anymore; the server's README
+  says how to bring its history over once.
 - **Discovery** works by itself once the Tonearm server runs: artists like yours, from Deezer.
-- **AI picks** (optional): give the Tonearm server your Ollama's address (`OLLAMA_URL`). They show up under
+- **AI picks** (optional): give the Tonearm server an AI: your own Ollama, any service with OpenAI's API
+  (OpenAI, OpenRouter, Gemini, LM Studio…) or Claude (`AI_PROVIDER`, see its README). They show up under
   Discover in both apps, together with **weekly picks** (a new playlist every week that downloads by itself).
+  A thumbs-down on any pick keeps that artist out.
 - **Phone controls desktop:** run the server and use the same music server address in both apps. The desktop app then appears in the phone's **Devices** screen.
 
   ## TODO:
